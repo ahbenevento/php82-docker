@@ -1,0 +1,30 @@
+# PHP 8.2 (cli) en Docker + usuario personalizado
+
+## Antes de poder utilizarlo
+
+Sobre la carpeta `./docker` ejecutar el siguiente comando para crear la imagen:
+
+```console
+docker-compose build
+```
+
+## Composer
+
+Comandos para descargar e instalar:
+
+```console
+# Descargar
+docker-compose run php82 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+
+# Instalar
+docker-compose run php82 php composer-setup.php
+
+# Descartar instalador
+docker-compose run php82 rm composer-setup.php
+```
+
+## Instalar paquetes
+
+```console
+docker-compose run php82 php composer.phar require phpmailer/phpmailer
+```
