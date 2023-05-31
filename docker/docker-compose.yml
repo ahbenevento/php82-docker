@@ -4,10 +4,8 @@ services:
 
   php82:
     build: ./
-    # image: php:8.2-cli
     container_name: php82
     restart: unless-stopped
     volumes:
       - ../src:/src
     working_dir: /src
-    # user: "${UID}:${GID}"

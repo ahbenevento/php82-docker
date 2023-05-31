@@ -7,6 +7,7 @@ RUN apt-get update \
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini" \
     && docker-php-ext-install zip
 
+# Reemplazar 'nombre-usuario' por el usuario real
 ARG USERNAME=nombre-usuario
 ARG UID=1000
 ARG GID=$UID
