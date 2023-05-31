@@ -2,7 +2,9 @@
 
 ## Antes de poder utilizarlo
 
-Sobre la carpeta `./docker` ejecutar el siguiente comando para crear la imagen:
+1. Editar el archivo `php82-docker/docker/Dockerfile` y reemplazar "nombre-usuario" por el usuario real.
+
+2. Sobre la carpeta `./docker` ejecutar el siguiente comando para crear la imagen:
 
 ```console
 docker-compose build
