@@ -10,6 +10,8 @@
 docker-compose build
 ```
 
+3. El contenedor tiene configurada como carpeta de trabajo `src/`. Todos los comandos trabajarán sobre esta carpeta.
+
 ## Composer
 
 Comandos para descargar e instalar:
